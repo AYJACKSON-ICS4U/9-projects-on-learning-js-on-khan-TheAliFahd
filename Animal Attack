@@ -1,0 +1,35 @@
+var bodyX = 200;
+var bodyY = 220;
+var bodyW = 197;
+var bodyH = bodyW/2;
+var mouthX = 50;
+var mouthY = 50;
+
+draw = function() {
+    background(207, 254, 255);
+    fill(240, 209, 36);
+    triangle(100, 100, 106, 219, 166, 150);
+    triangle(303, 100, 223, 159, 285, 213);
+    ellipse(bodyX, bodyY, bodyW, 169); // body?
+    
+    //Whiskers
+    line (159, 232, 50, 185);
+    line (159, 250, 50, 240);
+    line (158, 265, 50, 285);
+    line (250, 235, 361, 185);
+    line (250, 254, 361, 253);
+    line (250, 268, 361, 293);
+    
+    //Eyes
+    fill (255, 255, 255);
+    ellipse(150, 187, bodyW/4, 47);
+    ellipse(241, 187, bodyW/4, 47);
+    fill(0, 0, 0);
+     ellipse(151, 187, bodyW/18, 36);
+    ellipse(241, 187, bodyW/18, 36);
+    
+    //Mouth
+    ellipse (203, 250, mouthX, mouthY);
+    mouthX += 2;
+    mouthY += 2;
+};
