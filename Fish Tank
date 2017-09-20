@@ -59,7 +59,7 @@ bodyColor = color(random(255), random(255), random(255));
  drawFish(centerX,
  centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight);
  
- centerX = random(400);
+centerX = random(400);
 centerY = random(300);
 bodyLength = random(118);
 bodyHeight = random(74);
