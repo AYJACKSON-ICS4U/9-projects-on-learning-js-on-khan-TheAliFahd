@@ -1,0 +1,28 @@
+var answer = floor(random(1, 5));
+
+var result = function(answer) {
+    
+    fill(0, 0, 0);
+    ellipse(200, 200, 375, 375);
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    answer = floor(random(1, 4));
+    text(answer, 194, 175);
+    if (answer === 1)
+    {
+        text("Yes", 185, 235);
+    }
+    else if (answer === 2)
+    {
+        text("No", 185, 235);
+    }
+    else if (answer === 3)
+    {
+        text("Maybe", 185, 235);
+    }
+};
+result(answer);
+mouseClicked = function(){
+result(answer);
+};
