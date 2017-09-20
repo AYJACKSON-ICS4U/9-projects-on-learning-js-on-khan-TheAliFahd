@@ -1,0 +1,75 @@
+background(89, 216, 255);
+
+var centerX = random(400);
+var centerY = random(300);
+var bodyLength = random(118);
+var bodyHeight = random(74);
+var bodyColor = color(random(255), random(255), random(255));
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+
+var drawFish = function (centerX, centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight)
+{
+    noStroke();
+    fill(bodyColor);
+    // body
+    ellipse(centerX, centerY, bodyLength, bodyHeight);
+    // tail
+    var tailWidth = bodyLength/4;
+    var tailHeight = bodyHeight/2;
+    triangle(centerX-bodyLength/2, centerY,
+             centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+             centerX-bodyLength/2-tailWidth, centerY    +tailHeight);
+    // eye
+    fill(33, 33, 33);
+    ellipse(centerX+bodyLength/4, centerY, bodyHeight/5,     bodyHeight/5);
+};
+
+
+drawFish(centerX,
+ centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight);
+ 
+centerX = random(400);
+centerY = random(300);
+bodyLength = random(118);
+bodyHeight = random(74);
+bodyColor = color(random(255), random(255), random(255));
+
+ drawFish(centerX,
+ centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight);
+ 
+ centerX = random(400);
+centerY = random(300);
+bodyLength = random(118);
+bodyHeight = random(74);
+bodyColor = color(random(255), random(255), random(255));
+
+ drawFish(centerX,
+ centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight);
+ 
+ centerX = random(400);
+centerY = random(300);
+bodyLength = random(118);
+bodyHeight = random(74);
+bodyColor = color(random(255), random(255), random(255));
+
+ drawFish(centerX,
+ centerY, bodyLength, bodyHeight, bodyColor, tailWidth, tailHeight);
+
+centerX = random(400);
+centerY = random(300);
+bodyLength = random(118);
+bodyHeight = random(74);
+bodyColor = color(random(255), random(255), random(255));
