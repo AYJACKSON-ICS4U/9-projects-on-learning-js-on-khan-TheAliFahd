@@ -1,0 +1,38 @@
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+//pizza
+//cheese
+fill (255, 247, 23);
+triangle(262, 223, 155, 69, 341, 144);
+//pepporoni
+fill (255, 0, 0);
+ellipse (237, 120, 26 ,26);
+ellipse (237, 157, 26 ,26);
+ellipse (283, 139, 26 ,26);
+ellipse (259, 191, 26 ,26);
+ellipse (283, 171, 26 ,26);
+ellipse (194, 99, 19 ,17);
+ellipse (207, 122, 19 ,17);
+ellipse (318, 149, 19 ,17);
+//crust
+fill(168, 143, 30);
+beginShape (10);
+vertex (246, 227);
+vertex (265, 242);
+vertex (348, 131);
+vertex (364, 146);
+endShape (30);
+
+//Pancake
+fill (241, 242, 184);
+ellipse (122, 213 , 167, 175);
+fill(168, 143, 30);
+ellipse (122, 213 , 151, 156);
+
+//Carrot strings
+stroke (255, 157, 0);
+line (149, 312, 251, 263);
+line (147, 332, 230, 263);
+line (149, 301, 295, 263);
