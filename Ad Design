@@ -1,0 +1,20 @@
+var PosX = -100;
+var PosY = 100;
+var posXtxt = 400;
+
+draw = function() {
+    background (255, 255, 255);
+    fill(255, 0, 0);
+    textSize(30);
+    text("SUPER ROBOT!", 82, 30);
+    textSize(10);
+    fill(0, 17, 255);
+    text("SUPER FUN!", posXtxt, 87);
+    textSize(30);
+    text("VOTED NUMBER 1 TOY EVER!", posXtxt, 350);
+    image(getImage("avatars/robot_male_3"), PosX, PosY);
+    PosX ++;
+    posXtxt --;
+    text("VOTED NUMBER 1 TOY EVER!", 100, 516);
+};
+
