@@ -1,0 +1,37 @@
+background(219, 255, 255);
+
+fill(174, 180, 214);
+triangle(200, 28, 350, 150, 50, 150);
+
+fill(255, 255, 255);
+rect(60, 150, 280, 206);
+
+
+
+var x;
+var y;
+for(y=135;y < 311; y+=25)
+{
+    for (x=50; x<315; x+=50)
+    {
+        image(getImage("cute/StoneBlock"), x, y, 50, 50);
+    }
+}
+
+for(y=163;y < 240; y+=58)
+{
+    for (x=66; x<312; x+=78)
+    {
+        image(getImage("cute/WindowTall"), x, y, 42, 30);
+    }
+}
+
+
+fill(176, 113, 19);
+rect(173, 265, 51, 90);
+fill(255, 247, 0);
+ellipse (215,310,7,9);
+for(x=-36; x<409; x+=100)
+{
+    image(getImage("cute/GrassBlock"), x, 302);
+}
