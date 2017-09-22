@@ -1,0 +1,68 @@
+var book = [
+    {
+        title: "The Giver",
+        stars: 4
+    },
+    
+    {
+        title: "The Book",
+        stars: 4
+    },
+    
+    {
+        title: "The Other Book",
+        stars: 4
+    },
+    
+    {
+        title: "The New Book",
+        stars: 4
+    },
+    
+    {
+        title: "The Old Book",
+        stars: 4
+    },
+    
+    {
+        title: "The Jungle Book",
+        stars: 4
+    }
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+rect(0, 250, width, 10);
+
+var x = 10;
+var y = 20;
+var textY = 29;
+var starx = 20;
+var stary = 90;
+var m = 15;
+var l = 0;
+for (var k = 0; k <2; k++)
+{
+    for (var i = 0; i <3; i++)
+    {
+        fill(random(255), random(255), random(255));
+        rect(x, y, 90, 100);
+        fill(0, 0, 0);
+        text(book[l].title, x, textY, 70, 100);
+        x+=100;
+        for (var j = 0; j < book[i].stars; j++)
+        {
+            image(getImage("cute/Star"), m + i * starx, stary, 20, 30);
+             m += 20;
+        }
+        l++;
+        
+        starx = 20;
+    }
+    m = 13;
+    stary += 130;
+    x = 10;
+    y += 130;
+    textY += 133;
+}
