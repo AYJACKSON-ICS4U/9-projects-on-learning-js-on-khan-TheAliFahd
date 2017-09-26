@@ -1,31 +1,37 @@
 var book = [
     {
         title: "The Giver",
+        Recomended: "Yes!",
         stars: 4
     },
     
     {
         title: "The Book",
+        Recomended: "No!",
         stars: 4
     },
     
     {
         title: "The Other Book",
+        Recomended: "Yes!",
         stars: 4
     },
     
     {
         title: "The New Book",
+        Recomended: "No!",
         stars: 4
     },
     
     {
         title: "The Old Book",
+        Recomended: "Yes!",
         stars: 4
     },
     
     {
         title: "The Jungle Book",
+        Recomended: "Yes!",
         stars: 4
     }
 ];
@@ -50,6 +56,7 @@ for (var k = 0; k <2; k++)
         rect(x, y, 90, 100);
         fill(0, 0, 0);
         text(book[l].title, x, textY, 70, 100);
+        text("Recomended..." + book[l].Recomended, x, textY + 39, 70, 100);
         x+=100;
         for (var j = 0; j < book[i].stars; j++)
         {
@@ -57,7 +64,6 @@ for (var k = 0; k <2; k++)
              m += 20;
         }
         l++;
-        
         starx = 20;
     }
     m = 13;
